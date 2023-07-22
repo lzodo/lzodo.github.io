@@ -286,7 +286,7 @@
 <p>2、公私钥匙用户家目录下的 .ssh 文件夹中<br>私钥 : id_rsa<br>公钥 : id_rsa.pub</p>
 <p>3、复制公钥的内容到远程仓库(GitHub 或 开源中国等）<br>添加成功后本台计算机就能和远程仓库进行 ssh 交互了</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yz4y1y7RQ?p=40">参考资料 后续继续</a></p>
-<h3 id="linux-与-linux-ssh-设置"><a href="#linux-与-linux-ssh-设置" class="headerlink" title="linux 与 linux ssh 设置"></a>linux 与 linux ssh 设置</h3><p>1、两个主机都生成公钥私钥<br>2、连接主机 <code>ssh-copy-id -i ./id_rsa.pub root@114.115.212.xxx</code> 向目标主机114 上传公钥<br>3、ssh <a href="mailto:&#x72;&#111;&#x6f;&#x74;&#64;&#x78;&#x78;&#x78;&#46;&#120;&#120;&#120;&#46;&#x78;&#x78;&#x78;&#x2e;&#120;&#x78;">&#x72;&#111;&#x6f;&#x74;&#64;&#x78;&#x78;&#x78;&#46;&#120;&#120;&#120;&#46;&#x78;&#x78;&#x78;&#x2e;&#120;&#x78;</a> 测试是否可用直接连接</p>
+<h3 id="linux-与-linux-ssh-设置"><a href="#linux-与-linux-ssh-设置" class="headerlink" title="linux 与 linux ssh 设置"></a>linux 与 linux ssh 设置</h3><p>1、两个主机都生成公钥私钥<br>2、连接主机 <code>ssh-copy-id -i ./id_rsa.pub root@114.115.212.xxx</code> 向目标主机114 上传公钥<br>3、ssh <a href="mailto:&#114;&#x6f;&#111;&#x74;&#x40;&#120;&#120;&#x78;&#46;&#120;&#x78;&#x78;&#46;&#120;&#120;&#120;&#x2e;&#x78;&#120;">&#114;&#x6f;&#111;&#x74;&#x40;&#120;&#120;&#x78;&#46;&#120;&#x78;&#x78;&#46;&#120;&#120;&#120;&#x2e;&#x78;&#120;</a> 测试是否可用直接连接</p>
 <p>win 连 linux 可能需要在git bash上操作</p>
 <p>或<br>远程主机直接将客户端的公钥加入 ~&#x2F;.ssh&#x2F;authorized_keys 文件中</p>
 <h2 id="git-服务器环境搭建"><a href="#git-服务器环境搭建" class="headerlink" title="git 服务器环境搭建"></a>git 服务器环境搭建</h2><ul>
