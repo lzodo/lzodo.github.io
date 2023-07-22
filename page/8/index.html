@@ -53,7 +53,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-07-22 15:51:34'
+  postUpdate: '2023-07-22 15:54:12'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -217,7 +217,48 @@ Pre-request Script
 Tests Tab
 接口调用完成可以做一些事情
 
-123 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-systemtype/" title="业务系统">业务系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">IaaS
+123 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-svn/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">---
+
+title: gitee + svn项目创建
+码云(gitee)创建私有仓库
+进入管理-启用 svn 服务，就能通过 svn 方式管理仓库
+下载
+进入 Apache 官网 -&gt; Subversion -&gt; 找到 Binary Packages 下载可以的包 -&gt; VisualSVN -&gt; 下载安装 tools
+搭建服务器的话还要下载 Visual SVN Server
+https://tortoisesvn.net/sasl_howto.html
+
+
+层级
+客户层
+通过命令行操作
+通过工具操作
+
+
+服务层
+通过(DAV)http://方式访问远程仓库
+需要永远Apache服务器
+
+
+通过(SVN)svn://方式访问远程仓库
+通过(Local)file://方式访问仓库(搭建 SVN 仓库本机，不需要网络)
+
+
+仓库层
+
+
+
+SVN 命令行
+管理员命令
+
+svnadmin –help
+svnadmin –help 命令
+仓库
+顶级仓库 (顶级仓库下管理着很多根仓库)
+一个文件夹,创建根仓库时，根仓库路径中上一层必须存在，这个就是顶层参考
+
+
+根仓库
+s ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-systemtype/" title="业务系统">业务系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">IaaS
 将基础设施提供给用户
 
 
@@ -287,7 +328,17 @@ ERP 系统（企业资源计划的简称）
 自习列表 &#x3D; [Linux 命令行工具,dos,window]
 路线一 &#x3D; [C,Shell,Linux 高级编程]路线二 &#x3D; [王红元算法，设计模式]路线三 &#x3D; [Vue,Javascript,小程序 web 前端相关]路线四 &#x3D; [Python]路线五 &#x3D; [NodeJs]
 潭州 linux王红元-算法王红元-Vue王红元-nodejs
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-vimium/" title="vimium">vimium</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">移动
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/othier-docker/" title="docker">docker</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">
+概述
+解决问题:  部署环境麻烦，相同环境更麻烦  项目与环境一同打包（镜像），发布到docker仓库  &#x3D;&gt; 用户(运维)下载直接运行
+
+隔离思想Docker核心思想 打包装箱 每个箱子相互隔离互不影响
+
+基本信息基于go开发的容器技术、虚拟化技术(系统最核心的环境 + mysql + 需要的技术2 + 需要的技术n ..) 打包成镜像 ，多个再相同系统运行   直接运行在宿主机上，容器没有自己内核，也没有不必要的软件   每个容器相互隔离，有自己的文件系统，互不影响   内核级别的虚拟化虚拟机 &#x3D;&gt; 虚拟机资源占用、冗余步骤多、启动速度慢、很多东西都不是程序环境所需要的   运行一个完整的系统，在系统上安装和运行软件   如果需要连个容器，就需要安装连个centos这样的系统   安全性强基本组成架构
+
+DevOpts(开发、运维)打包镜像，发布运维，一键运行，运行环境高度一致
+
+名词镜像(image):类似模板，可以通过这个模板创建容器服务容器(container)利用容器运行一个或一组应用,通过镜像创建可以启动停止删除等基本命令仓库(repos ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-vimium/" title="vimium">vimium</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">移动
 j/k/h/l:下&#x2F;上&#x2F;左&#x2F;右 
 u/d -&gt; shift+空格/空格:上下翻页
 gg/G
@@ -322,58 +373,7 @@ tab:从地址栏回到页面
 alt+f:打开多个链接
 alt+p:固定标签页
 i:插入模式(屏蔽vimium快捷键)
-v:选择模式，w,e,b等选择字 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-svn/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">---
-
-title: gitee + svn项目创建
-码云(gitee)创建私有仓库
-进入管理-启用 svn 服务，就能通过 svn 方式管理仓库
-下载
-进入 Apache 官网 -&gt; Subversion -&gt; 找到 Binary Packages 下载可以的包 -&gt; VisualSVN -&gt; 下载安装 tools
-搭建服务器的话还要下载 Visual SVN Server
-https://tortoisesvn.net/sasl_howto.html
-
-
-层级
-客户层
-通过命令行操作
-通过工具操作
-
-
-服务层
-通过(DAV)http://方式访问远程仓库
-需要永远Apache服务器
-
-
-通过(SVN)svn://方式访问远程仓库
-通过(Local)file://方式访问仓库(搭建 SVN 仓库本机，不需要网络)
-
-
-仓库层
-
-
-
-SVN 命令行
-管理员命令
-
-svnadmin –help
-svnadmin –help 命令
-仓库
-顶级仓库 (顶级仓库下管理着很多根仓库)
-一个文件夹,创建根仓库时，根仓库路径中上一层必须存在，这个就是顶层参考
-
-
-根仓库
-s ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/othier-docker/" title="docker">docker</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.685Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">
-概述
-解决问题:  部署环境麻烦，相同环境更麻烦  项目与环境一同打包（镜像），发布到docker仓库  &#x3D;&gt; 用户(运维)下载直接运行
-
-隔离思想Docker核心思想 打包装箱 每个箱子相互隔离互不影响
-
-基本信息基于go开发的容器技术、虚拟化技术(系统最核心的环境 + mysql + 需要的技术2 + 需要的技术n ..) 打包成镜像 ，多个再相同系统运行   直接运行在宿主机上，容器没有自己内核，也没有不必要的软件   每个容器相互隔离，有自己的文件系统，互不影响   内核级别的虚拟化虚拟机 &#x3D;&gt; 虚拟机资源占用、冗余步骤多、启动速度慢、很多东西都不是程序环境所需要的   运行一个完整的系统，在系统上安装和运行软件   如果需要连个容器，就需要安装连个centos这样的系统   安全性强基本组成架构
-
-DevOpts(开发、运维)打包镜像，发布运维，一键运行，运行环境高度一致
-
-名词镜像(image):类似模板，可以通过这个模板创建容器服务容器(container)利用容器运行一个或一组应用,通过镜像创建可以启动停止删除等基本命令仓库(repos ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-issues/" title="偏门问题">偏门问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.684Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">vue v-ifv-if element控件 如果切换的内容相似错乱问题    el-form ref&#x3D;”childform” key&#x3D;”xx”
+v:选择模式，w,e,b等选择字 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/22/other/other-issues/" title="偏门问题">偏门问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-22T07:14:09.684Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></span></div><div class="content">vue v-ifv-if element控件 如果切换的内容相似错乱问题    el-form ref&#x3D;”childform” key&#x3D;”xx”
 常见的兼容性问题项目的难点- web调用摄像头，web播放rtsp视频流问题
 
 终端图标字体无法显示问题
@@ -426,7 +426,7 @@ Velocity.js
 NPM项目插件
 @svrx&#x2F;cli (puer升级)
 
-</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/7/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/#content-inner">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/#content-inner">11</a><a class="extend next" rel="next" href="/page/9/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">lzoxun</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">108</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/liaozhongxun"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/liaozhongxun" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:869664233@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是我的文档</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-11/" title="win 11 set">win 11 set</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-gitbash/" title="git bash">git bash</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-wsl/" title="wsl">wsl</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-main/" title="window">window</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/web/%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" title="兼容问题">兼容问题</a><time datetime="2023-07-22T07:14:09.699Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/" style="font-size: 1.1em; color: #999">标记语言</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">106</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/12/"><span class="card-archive-list-date">十二月 2016</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">108</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-22T07:51:33.972Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By lzoxun</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/7/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/#content-inner">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/#content-inner">11</a><a class="extend next" rel="next" href="/page/9/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">lzoxun</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">108</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/liaozhongxun"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/liaozhongxun" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:869664233@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是我的文档</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-11/" title="win 11 set">win 11 set</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-gitbash/" title="git bash">git bash</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-wsl/" title="wsl">wsl</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/window/win-main/" title="window">window</a><time datetime="2023-07-22T07:14:09.700Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/22/web/%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" title="兼容问题">兼容问题</a><time datetime="2023-07-22T07:14:09.699Z" title="发表于 2023-07-22 15:14:09">2023-07-22</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/" style="font-size: 1.1em; color: #999">标记语言</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">106</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/12/"><span class="card-archive-list-date">十二月 2016</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">108</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-22T07:54:12.682Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By lzoxun</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
